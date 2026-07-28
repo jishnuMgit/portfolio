@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sudhanvanadiger.vercel.app/sitemap.xml
+Sitemap: https://portfolio-topaz-one-34.vercel.app/
