@@ -54,7 +54,7 @@ function CodeBlock() {
         <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
         <span className="h-2.5 w-2.5 rounded-full bg-green-400/80" />
         <span className="ml-2 text-[10px] text-muted-foreground">
-          sudhanva.ts
+          JishnuM.ts
         </span>
       </div>
       <div className="px-4 py-3 font-mono text-xs leading-loose">

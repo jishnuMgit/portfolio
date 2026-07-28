@@ -3,7 +3,7 @@ import Lottie from "lottie-react";
 import { ArrowDown, FileText, Linkedin } from "lucide-react";
 import { ABOUT_ME, SOCIAL_MEDIA, RESUME_LINK } from "@/constants";
 
-const LINKEDIN_URL = "https://www.linkedin.com/in/sudhanva-nadiger-b616a6212/";
+const LINKEDIN_URL = "https://www.linkedin.com/in/jishnu-m-11760b2b0/";
 import Magnetic from "./Magnetic";
 import heroAnimation from "@/assets/images/Hero/main_comp.json";
 

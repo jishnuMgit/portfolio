@@ -15,16 +15,21 @@ import {
   SiNextdotjs,
   SiPrisma,
   SiEjs,
+  SiPosthog,
+  SiClerk,
+  SiVercel,
+  SiRender,
+  SiCpanel,
+  SiRedux,
 } from "react-icons/si";
 
 // Inline SVG Data URI used as default placeholder image
 const DUMMY_IMAGE =
   "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22600%22%20height%3D%22400%22%20viewBox%3D%220%200%20600%20400%22%3E%3Crect%20fill%3D%22%231e293b%22%20width%3D%22600%22%20height%3D%22400%22%2F%3E%3Ctext%20fill%3D%22%2364748b%22%20font-family%3D%22sans-serif%22%20font-size%3D%2224%22%20font-weight%3D%22bold%22%20x%3D%2250%25%22%20y%3D%2250%25%22%20text-anchor%3D%22middle%22%20dy%3D%22.3em%22%3EProject%20Preview%3C%2Ftext%3E%3C%2Fsvg%3E";
 
-
-  import LMS from '../assets/images/OIP (1).jpg'
-  import cords from '../assets/images/logo.png'
-
+import LMS from "../assets/images/OIP (1).jpg";
+import cords from "../assets/images/logo.png";
+import { FaAws } from "react-icons/fa6";
 
 export interface TechIcon {
   id: string;
@@ -55,6 +60,9 @@ export const PROJECTS: Project[] = [
       { id: "icon-2", icon: SiNodedotjs, name: "Node.js" },
       { id: "icon-3", icon: SiExpress, name: "Express.js" },
       { id: "icon-4", icon: SiMongodb, name: "MongoDB" },
+      { id: "icon-5", icon: SiVercel, name: "Vercel" },
+      { id: "icon-6", icon: SiRender, name: "Render" },
+      { id: "icon-7", icon: FaAws, name: "AWS" },
     ],
   },
   {
@@ -70,6 +78,7 @@ export const PROJECTS: Project[] = [
       { id: "icon-3", icon: SiExpress, name: "Express.js" },
       { id: "icon-4", icon: SiMongodb, name: "MongoDB" },
       { id: "icon-5", icon: SiTailwindcss, name: "Tailwind CSS" },
+      { id: "icon-5", icon: SiVercel, name: "Vercel" },
     ],
   },
   {
@@ -84,6 +93,8 @@ export const PROJECTS: Project[] = [
       { id: "icon-2", icon: SiNodedotjs, name: "Node.js" },
       { id: "icon-3", icon: SiExpress, name: "Express.js" },
       { id: "icon-4", icon: SiMongodb, name: "MongoDB" },
+      { id: "icon-5", icon: SiVercel, name: "Vercel" },
+      { id: "icon-6", icon: SiRender, name: "Render" },
     ],
   },
   {
@@ -96,6 +107,10 @@ export const PROJECTS: Project[] = [
     stack: [
       { id: "icon-1", icon: SiJavascript, name: "JavaScript" },
       { id: "icon-2", icon: SiReact, name: "React.js" },
+      { id: "icon-3", icon: SiNodedotjs, name: "Node.js" },
+      { id: "icon-4", icon: SiMongodb, name: "Mongodb" },
+      { id: "icon-5", icon: SiVercel, name: "Vercel" },
+      { id: "icon-6", icon: SiRender, name: "Render" },
     ],
   },
   {
@@ -109,6 +124,13 @@ export const PROJECTS: Project[] = [
       { id: "icon-1", icon: SiReact, name: "React.js" },
       { id: "icon-2", icon: SiTypescript, name: "TypeScript" },
       { id: "icon-3", icon: SiTailwindcss, name: "Tailwind CSS" },
+      { id: "icon-7", icon: SiNodedotjs, name: "Node.js" },
+
+      { id: "icon-4", icon: SiCpanel, name: "Cpanel" },
+
+      { id: "icon-5", icon: SiVercel, name: "Vercel" },
+      { id: "icon-6", icon: SiRender, name: "Render" },
+      { id: "icon-8", icon: SiRedux, name: "Redux" },
     ],
   },
   {
@@ -122,6 +144,10 @@ export const PROJECTS: Project[] = [
       { id: "icon-1", icon: SiReact, name: "React.js" },
       { id: "icon-2", icon: SiTypescript, name: "TypeScript" },
       { id: "icon-3", icon: SiNodedotjs, name: "Node.js" },
+      { id: "icon-6", icon: SiNestjs, name: "Nest.js" },
+
+      { id: "icon-4", icon: SiMysql, name: "Mysql" },
+      { id: "icon-5", icon: SiPrisma, name: "Prisma" },
     ],
   },
 
@@ -131,11 +157,15 @@ export const PROJECTS: Project[] = [
     title: "Subscription React Native",
     github: "https://github.com/jishnuMgit/Subscription_ReactNative",
     image: DUMMY_IMAGE,
-    content: "Mobile application interface for subscription management built with React Native.",
+    content:
+      "Mobile application interface for subscription management built with React Native.",
     stack: [
       { id: "icon-1", icon: SiTypescript, name: "TypeScript" },
       { id: "icon-2", icon: SiReact, name: "React Native" },
-      { id: "icon-3", icon: SiCss3, name: "NativeWind" },
+      { id: "icon-3", icon: SiCss3, name: "NativeWind" }, //
+      { id: "icons-5", icon: SiClerk, name: "Clerk" },
+
+      { id: "icons-4", icon: SiPosthog, name: "Posthog" },
     ],
   },
   {
@@ -143,12 +173,15 @@ export const PROJECTS: Project[] = [
     title: "DevEvents",
     github: "https://github.com/jishnuMgit/DevEvents",
     image: DUMMY_IMAGE,
-    content: "Event management platform for developer meetups and tech conferences.",
+    content:
+      "Event management platform for developer meetups and tech conferences.",
     stack: [
       { id: "icon-1", icon: SiTypescript, name: "TypeScript" },
       { id: "icon-2", icon: SiNextdotjs, name: "Next.js" },
       { id: "icon-3", icon: SiMongodb, name: "MongoDB" },
+      { id: "icons-5", icon: SiClerk, name: "Clerk" },
       { id: "icon-4", icon: SiTailwindcss, name: "Tailwind CSS" },
+      { id: "icons-6", icon: SiPosthog, name: "SiPosthog" },
     ],
   },
   {
@@ -156,7 +189,8 @@ export const PROJECTS: Project[] = [
     title: "Hoardlinks Backend",
     github: "https://github.com/jishnuMgit/hoardlinks_backend",
     image: cords,
-    content: "Backend REST API service supporting hoarding management operations.",
+    content:
+      "Backend REST API service supporting hoarding management operations.",
     stack: [
       { id: "icon-1", icon: SiTypescript, name: "TypeScript" },
       { id: "icon-2", icon: SiExpress, name: "Express.js" },
@@ -169,12 +203,14 @@ export const PROJECTS: Project[] = [
     title: "MetaCrop API",
     github: "https://github.com/jishnuMgit/metacorp_Api",
     image: cords,
-    content: "Backend API microservice built with Express and MySQL database integration.",
+    content:
+      "Backend API microservice built with Express and MySQL database integration.",
     stack: [
       { id: "icon-1", icon: SiTypescript, name: "TypeScript" },
       { id: "icon-2", icon: SiNodedotjs, name: "Node.js" },
       { id: "icon-3", icon: SiExpress, name: "Express.js" },
       { id: "icon-4", icon: SiMysql, name: "MySQL" },
+      { id: "icon-5", icon: SiPrisma, name: "Prisma" },
     ],
   },
   {
@@ -182,7 +218,8 @@ export const PROJECTS: Project[] = [
     title: "AI Ads Next.js",
     github: "https://github.com/jishnuMgit/AI-Ads-NEXT.js",
     image: DUMMY_IMAGE,
-    content: "AI-driven advertisement creation and campaign management web app.",
+    content:
+      "AI-driven advertisement creation and campaign management web app.",
     stack: [
       { id: "icon-1", icon: SiNextdotjs, name: "Next.js" },
       { id: "icon-2", icon: SiJavascript, name: "JavaScript" },
@@ -205,20 +242,24 @@ export const PROJECTS: Project[] = [
     title: "Ecommerce Web App",
     github: "https://github.com/jishnuMgit/ecommerce",
     image: DUMMY_IMAGE,
-    content: "Full-stack e-commerce application with product listing, cart, and Mongoose integration.",
+    content:
+      "Full-stack e-commerce application with product listing, cart, and Mongoose integration.",
     stack: [
       { id: "icon-1", icon: SiJavascript, name: "JavaScript" },
       { id: "icon-2", icon: SiReact, name: "React.js" },
       { id: "icon-3", icon: SiNodedotjs, name: "Node.js" },
+            { id: "icon-5", icon: SiExpress, name: "Express.js" },
+
       { id: "icon-4", icon: SiMongodb, name: "MongoDB" },
     ],
   },
   {
     id: "repo-react-native-first-project",
-    title: "React Native First Project",
+    title: "React Native spotlight",
     github: "https://github.com/jishnuMgit/ReactNativeFirstProject",
     image: DUMMY_IMAGE,
-    content: "Cross-platform mobile UI application developed using Expo and React Native.",
+    content:
+      "Cross-platform mobile UI application developed using Expo and React Native.",
     stack: [
       { id: "icon-1", icon: SiTypescript, name: "TypeScript" },
       { id: "icon-2", icon: SiReact, name: "React Native" },
@@ -235,7 +276,7 @@ export const PROJECTS: Project[] = [
       { id: "icon-1", icon: SiNodedotjs, name: "Node.js" },
       { id: "icon-2", icon: SiExpress, name: "Express.js" },
       { id: "icon-3", icon: SiMongodb, name: "MongoDB" },
-      ],
+    ],
   },
   {
     id: "repo-itemcode",
@@ -243,9 +284,7 @@ export const PROJECTS: Project[] = [
     github: "https://github.com/jishnuMgit/itemcode",
     image: DUMMY_IMAGE,
     content: "Inventory SKU and item code generator service.",
-    stack: [
-      { id: "icon-1", icon: SiJavascript, name: "JavaScript" },
-    ],
+    stack: [{ id: "icon-1", icon: SiJavascript, name: "JavaScript" }],
   },
   {
     id: "repo-notesuser",
@@ -255,7 +294,7 @@ export const PROJECTS: Project[] = [
     content: "User note management web application.",
     stack: [
       { id: "icon-1", icon: SiEjs, name: "Ejs" },
-    
+
       { id: "icon-2", icon: SiMongodb, name: "MongoDB" },
     ],
   },
@@ -276,16 +315,15 @@ export const PROJECTS: Project[] = [
     github: "https://github.com/jishnuMgit/RECIPE_FINDER",
     image: DUMMY_IMAGE,
     content: "Recipe search application connecting to external culinary APIs.",
-    stack: [
-      { id: "icon-1", icon: SiJavascript, name: "JavaScript" },
-    ],
+    stack: [{ id: "icon-1", icon: SiJavascript, name: "JavaScript" }],
   },
   {
     id: "repo-mern-ecommerce",
     title: "MERN Ecommerce",
     github: "https://github.com/jishnuMgit/mern-ecommerce",
     image: DUMMY_IMAGE,
-    content: "MERN stack shopping platform with authentication and order management.",
+    content:
+      "MERN stack shopping platform with authentication and order management.",
     stack: [
       { id: "icon-1", icon: SiJavascript, name: "JavaScript" },
       { id: "icon-2", icon: SiReact, name: "React.js" },
@@ -303,7 +341,7 @@ export const PROJECTS: Project[] = [
       { id: "icon-2", icon: SiNodedotjs, name: "Node.js" },
       { id: "icon-3", icon: SiExpress, name: "Express.js" },
       { id: "icon-4", icon: SiMongodb, name: "MongoDB" },
-      {id:"icon-5",icon:SiTailwindcss,name:"TailwindCss"}
+      { id: "icon-5", icon: SiTailwindcss, name: "TailwindCss" },
     ],
   },
   {
@@ -324,11 +362,11 @@ export const PROJECTS: Project[] = [
     image: DUMMY_IMAGE,
     content: "Frontend web store repository and user portal interface.",
     stack: [
-     { id: "icon-1", icon: SiReact, name: "React.js" },
+      { id: "icon-1", icon: SiReact, name: "React.js" },
       { id: "icon-2", icon: SiNodedotjs, name: "Node.js" },
       { id: "icon-3", icon: SiExpress, name: "Express.js" },
       { id: "icon-4", icon: SiMongodb, name: "MongoDB" },
-      {id:"icon-5",icon:SiTailwindcss,name:"TailwindCss"}
+      { id: "icon-5", icon: SiTailwindcss, name: "TailwindCss" },
     ],
   },
   {
@@ -338,7 +376,7 @@ export const PROJECTS: Project[] = [
     image: DUMMY_IMAGE,
     content: "Frontend user interface for Twitter clone client.",
     stack: [
-     { id: "icon-1", icon: SiJavascript, name: "JavaScript" },
+      { id: "icon-1", icon: SiJavascript, name: "JavaScript" },
       { id: "icon-2", icon: SiReact, name: "React.js" },
       { id: "icon-3", icon: SiTailwindcss, name: "Tailwindcss" },
     ],
@@ -350,11 +388,11 @@ export const PROJECTS: Project[] = [
     image: DUMMY_IMAGE,
     content: "Social media clone supporting post creation and user feeds.",
     stack: [
-       { id: "icon-1", icon: SiReact, name: "React.js" },
+      { id: "icon-1", icon: SiReact, name: "React.js" },
       { id: "icon-2", icon: SiNodedotjs, name: "Node.js" },
       { id: "icon-3", icon: SiExpress, name: "Express.js" },
       { id: "icon-4", icon: SiMongodb, name: "MongoDB" },
-      {id:"icon-5",icon:SiTailwindcss,name:"TailwindCss"}
+      { id: "icon-5", icon: SiTailwindcss, name: "TailwindCss" },
     ],
   },
 ];
