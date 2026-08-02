@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Github, ChevronDown, ChevronUp } from "lucide-react";
 import { PROJECTS } from "@/constants";
+import Apps from "./App";
 
 const INITIAL_SHOW = 6;
 
@@ -120,6 +121,8 @@ export default function Projects() {
           </button>
         </motion.div>
       )}
+
+      <Apps/>
     </section>
   );
 }
