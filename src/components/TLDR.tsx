@@ -157,7 +157,7 @@ export default function TLDR() {
           />
            <StatCard
             icon={LineChartIcon}
-            value="22+"
+            value="36+"
             label="projects(Learning)"
             delay={0.15}
           />

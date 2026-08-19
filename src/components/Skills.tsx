@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
 import { SKILLS_LIST } from "@/constants";
 import type { Skill } from "@/constants/skillsList";
-
+const COMBINATION_SKILLS = [
+  "MERN",
+  "React + Django",
+  "React + FastAPI",
+  "React Native + Node.js",
+  "React Native + Django",
+  "React Native + FastAPI",
+  "Next.js",
+];
 const containerVariants = {
   hidden: { opacity: 0 },
   show: {
@@ -67,7 +75,48 @@ function CategoryCard({
     </motion.div>
   );
 }
+function CombinationSkills() {
+  return (
+    <section className="mt-16">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.5 }}
+      >
+        <h2 className="section-title">Technology Stacks</h2>
 
+        <p className="section-subtitle">
+          Full-stack combinations I can work with
+        </p>
+      </motion.div>
+
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-40px" }}
+        className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4"
+      >
+        {COMBINATION_SKILLS.map((stack) => (
+          <motion.div
+            key={stack}
+            variants={cardVariants}
+            whileHover={{
+              y: -4,
+              transition: { duration: 0.2 },
+            }}
+            className="glass-card group border  flex min-h-[80px] items-center justify-center px-4 text-center"
+          >
+            <span className="text-sm font-semibold text-muted-foreground transition-colors group-hover:text-foreground  hover:border-blue-500 text-slate-100">
+              {stack}
+            </span>
+          </motion.div>
+        ))}
+      </motion.div>
+    </section>
+  );
+}
 export default function Skills() {
   return (
     <section id="skills" className="section-container">
@@ -93,6 +142,8 @@ export default function Skills() {
           />
         ))}
       </div>
+            <CombinationSkills />
+
     </section>
   );
 }
