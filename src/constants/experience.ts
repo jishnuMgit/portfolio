@@ -18,7 +18,7 @@ import cords from '../assets/images/logo.png'
 import rootm from '../assets/images/OIP (1).jpg'
 import zoople from '../assets/images/zoople.jpg'
 import bytedart from '../assets/images/bytedart.jpg'
-import okaz from '../assets/images/image.png'
+import okaz from '../assets/images/bossInfo.png'
 // Placeholder SVG for dummy company logos
 const DUMMY_LOGO =
   "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%22%20height%3D%22100%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20fill%3D%22%23334155%22%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2220%22%2F%3E%3Ctext%20fill%3D%22%2394a3b8%22%20font-family%3D%22sans-serif%22%20font-size%3D%2212%22%20font-weight%3D%22bold%22%20x%3D%2250%25%22%20y%3D%2250%25%22%20text-anchor%3D%22middle%22%20dy%3D%22.3em%22%3ELOGO%3C%2Ftext%3E%3C%2Fsvg%3E";
@@ -51,9 +51,9 @@ export interface Experience {
 
 export const EXPERIENCES: Experience[] = [
   {
-  organisation: "Okaz Technologies",
+  organisation: "Boss Infotech (Okaz Technologies)",
   logo: okaz,
-  link: "",
+  link: "https://www.bossinfotech.uksurgicals.com/",
   positions: [
     {
       title: "Full Stack Developer",
