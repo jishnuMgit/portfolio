@@ -17,7 +17,7 @@ export { OPEN_SOURCE_CONTRIBUTIONS, getOrgSummaries } from "./openSource";
 export type { Contribution, OrgSummary } from "./openSource";
 
 export const RESUME_LINK =
-  "https://drive.google.com/file/d/1J55gCsF0jij8suYpixL6pfCe0ZoWL1x1/view?usp=sharing";
+  "https://drive.google.com/file/d/1PSrJ6RfQC1AbWInjLcvlh0C6G-za2EAU/view?usp=sharing";
 export const REPO_LINK = "https://github.com/jishnuMgit/new_portfolio";
 
 export const ABOUT_ME = {
