@@ -95,7 +95,7 @@ export const EXPERIENCES: Experience[] = [
     positions: [
       {
         title: "Full Stack Developer",
-        duration: "May 2025 — Mar 2026",
+        duration: "May 2025 — july 2026",
         location: "Kottayam",
         content: [
           {
